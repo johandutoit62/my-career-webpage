@@ -26,7 +26,12 @@ Quisque tristique libero vel nunc tincidunt blandit. Praesent vulputate at mauri
         
       </p>
     <h2 class="text-center">Open Positions</h2>
-      <p>TODO - Show the jobs here</p>
+      <div>
+      {% for job in jobs %}
+        {% include 'jobs.html' %}       
+      {% endfor %}
+        
+      </div>
       <div class="text-center">
       <button class="btn btn-primary btn-large">Contact Us</button>
       </div>
