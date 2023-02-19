@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    {% include 'nav.html'%}
     <div class="container">
     <h1 class="text-center mt-2 mb-4">Careers for You!</h1>
     <img class="img-fluid" src="https://my-career-webpage-1.johandutoit62.repl.co/static/career.jpg" height='320'>
@@ -33,10 +34,10 @@ Quisque tristique libero vel nunc tincidunt blandit. Praesent vulputate at mauri
         
       </div>
       <div class="text-center">
-      <button class="btn btn-primary btn-large">Contact Us</button>
+        <a href="mailto:johandut@webmail.co.za?subject=Application%20for%20%7B%7B%20jobs%5B'title'%5D%7D%7D&body=Good%20day%2C%0D%0AMY%20id%20is%20%3CFill%20in%20ID%3E%0D%0A"class="btn btn-primary btn-large">Contact Us</a>
       </div>
     </div>
-    
+ {% include 'footer.html' %}   
   </body>
 
 
